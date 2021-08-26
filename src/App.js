@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component= {Home} />
+          <Route path='/time_app/' exact component= {Home} />
         </Switch>
       </Router>
     
