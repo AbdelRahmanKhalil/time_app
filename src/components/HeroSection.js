@@ -21,7 +21,7 @@ export default class HeroSection extends Component {
                 {background}
                 <h1 className="entry-title">{this.props.title}</h1>
                 <p>{this.props.paragraph}</p>
-                
+
             </div>
         )
     }
