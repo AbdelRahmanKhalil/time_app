@@ -1,6 +1,7 @@
 import '../App.css';
 import './HeroSection.css';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 
 export default class HeroSection extends Component {
     render() {
