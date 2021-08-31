@@ -4,6 +4,13 @@ import React, { Component } from 'react';
 import './YourWeekPie.js'
 import YourWeekPie from './YourWeekPie.js';
 
+const user_data = [
+    { name: 'Sleep', value: 600 },
+    { name: 'Work', value: 300 },
+    { name: 'Sports', value: 100 },
+    { name: 'Entertainment', value: 100 },
+  ];
+
 export default class HeroSection extends Component {
     
     render() {
@@ -21,7 +28,7 @@ export default class HeroSection extends Component {
         let chart = <></>
         if(this.props.chart !=null){
             if(this.props.chart == "pie"){
-                chart = <YourWeekPie/>
+                chart = <YourWeekPie data={user_data}/>
             }
         }
         return (

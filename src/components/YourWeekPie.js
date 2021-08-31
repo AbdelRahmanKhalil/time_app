@@ -1,12 +1,7 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 
-const data = [
-  { name: 'Sleep', value: 600 },
-  { name: 'Work', value: 300 },
-  { name: 'Sports', value: 100 },
-  { name: 'Entertainment', value: 100 },
-];
+
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -74,7 +69,7 @@ export default class YourWeekPie extends PureComponent {
           <Pie
             activeIndex={this.state.activeIndex}
             activeShape={renderActiveShape}
-            data={data}
+            data={this.props.data}
             cx="50%"
             cy="50%"
             innerRadius={112}
