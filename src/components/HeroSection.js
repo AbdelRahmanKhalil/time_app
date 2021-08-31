@@ -3,12 +3,12 @@ import './HeroSection.css';
 import React, { Component } from 'react';
 import './YourWeekPie.js'
 import YourWeekPie from './YourWeekPie.js';
-
+import MostTimeBarChart from './MostTimeBarChart.js';
 const user_data = [
-    { name: 'Sleep', value: 600 },
-    { name: 'Work', value: 300 },
-    { name: 'Sports', value: 100 },
-    { name: 'Entertainment', value: 100 },
+    { activity: 'Sleep', hours: 600 },
+    { activity: 'Work', hours: 300 },
+    { activity: 'Sports', hours: 100 },
+    { activity: 'Entertainment', hours: 100 },
   ];
 
 export default class HeroSection extends Component {
@@ -29,6 +29,9 @@ export default class HeroSection extends Component {
         if(this.props.chart !=null){
             if(this.props.chart == "pie"){
                 chart = <YourWeekPie data={user_data}/>
+            }
+            else if(this.props.chart == "bar"){
+                chart = <MostTimeBarChart data={user_data} />
             }
         }
         return (
