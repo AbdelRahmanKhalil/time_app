@@ -1,7 +1,10 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+// const COLORS = ['#77567a', '#c47ac0', '#e39ec1', '#debac0','#2f323a'   ];
+const COLORS = ['#ffeaf9', '#ae9dc1', '#817ba7', '#4c5c8d'   ];
+// const COLORS = ['#53c8ca', '#407ab1', '#8478B3', '#4c5c8d'   ];
+// const COLORS = ['#53a2c3', '#5568a2', '#273b71', '#c3b5d2'   ];
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -72,7 +75,7 @@ export default class YourWeekPie extends PureComponent {
             data={this.props.data}
             cx="50%"
             cy="50%"
-            innerRadius={112}
+            innerRadius={100}
             outerRadius={150}
             fill="#8884d8"
             dataKey="hours"

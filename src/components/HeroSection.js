@@ -5,7 +5,7 @@ import './YourWeekPie.js'
 import YourWeekPie from './YourWeekPie.js';
 import MostTimeBarChart from './MostTimeBarChart.js';
 const user_data = [
-    { activity: 'Sleep', hours: 600 },
+    { activity: 'Sleep', hours: 500 },
     { activity: 'Work', hours: 300 },
     { activity: 'Sports', hours: 100 },
     { activity: 'Entertainment', hours: 100 },
